@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/><style>
+table {border: medium solid #6495ed;border-collapse: collapse;width: 100%;} th{font-family: monospace;border: thin solid #6495ed;padding: 5px;background-color: #D0E3FA;}th{text-align: left;}td{font-family: sans-serif;border: thin solid #6495ed;padding: 5px;text-align: center;}.odd{background:#e8edff;}img{padding:5px; border:solid; border-color: #dddddd #aaaaaa #aaaaaa #dddddd; border-width: 1px 2px 2px 1px; background-color:white;}</style>
+</head>
+<body>
+<table><tr><th colspan="2"><pre><code>SELECT hrm."Path" , COUNT(*) AS count<br>FROM http_requests_mitmproxy hrm  where hrm.Status = 200<br>GROUP BY hrm."Path"<br>ORDER BY count DESC</code></pre></th></tr><tr><th>Path</th><th>count</th></tr><tr class="odd"><td>/</td><td>75</td></tr>
+<tr><td>/assets/img/favicon.svg</td><td>16</td></tr>
+<tr class="odd"><td>/assets/img/apple-touch-icon.png</td><td>11</td></tr>
+<tr><td>/assets/img/favicon.png</td><td>9</td></tr>
+<tr class="odd"><td>/assets/js/webcomponents.js?v=1.24.3</td><td>6</td></tr>
+<tr><td>/assets/js/index.js?v=1.24.3</td><td>6</td></tr>
+<tr class="odd"><td>/user/login</td><td>5</td></tr>
+<tr><td>/assets/img/logo.svg</td><td>5</td></tr>
+<tr class="odd"><td>/explore/repos</td><td>4</td></tr>
+<tr><td>/sitemap.xml</td><td>3</td></tr>
+<tr class="odd"><td>/gitmin/test</td><td>3</td></tr>
+<tr><td>/explore/repos?page=1&amp;sort=recentupdate&amp;q=&amp;topic=false</td><td>2</td></tr>
+<tr class="odd"><td>/assets/img/avatar_default.png</td><td>2</td></tr>
+<tr><td>/assets/css/theme-gitea-auto.css?v=1.24.3</td><td>2</td></tr>
+<tr class="odd"><td>/assets/css/index.css?v=1.24.3</td><td>2</td></tr>
+<tr><td>/?name=example.com&amp;type=A</td><td>2</td></tr>
+<tr class="odd"><td>/?XDEBUG_SESSION_START=phpstorm</td><td>2</td></tr>
+<tr><td>/.well-known/security.txt</td><td>2</td></tr>
+<tr class="odd"><td>/user/settings/keys</td><td>1</td></tr>
+<tr><td>/user/settings/account</td><td>1</td></tr>
+<tr class="odd"><td>/user/settings</td><td>1</td></tr>
+<tr><td>/user/logout</td><td>1</td></tr>
+<tr class="odd"><td>/user/login?redirect_to=%2fgitmin%2ftest</td><td>1</td></tr>
+<tr><td>/user/events</td><td>1</td></tr>
+<tr class="odd"><td>/gitmin/test/tree-view/branch/main/?sub_path=gitea-gitmin</td><td>1</td></tr>
+<tr><td>/gitmin/test/src/branch/main/gitea-gitmin</td><td>1</td></tr>
+<tr class="odd"><td>/gitmin</td><td>1</td></tr>
+<tr><td>/explore/users</td><td>1</td></tr>
+<tr class="odd"><td>/explore/organizations</td><td>1</td></tr>
+<tr><td>/avatars/3df8a561f69b60e55ebc81dcf233d2c9?size=96</td><td>1</td></tr>
+<tr class="odd"><td>/avatars/3df8a561f69b60e55ebc81dcf233d2c9?size=512</td><td>1</td></tr>
+<tr><td>/avatars/3df8a561f69b60e55ebc81dcf233d2c9?size=48</td><td>1</td></tr>
+<tr class="odd"><td>/assets/js/eventsource.sharedworker.js?v=1.24.3</td><td>1</td></tr>
+<tr><td>/assets/js/cropperjs.cf55f2af.js</td><td>1</td></tr>
+<tr class="odd"><td>/?dns=9VcBAAABAAAAAAAAB2V4YW1wbGUDY29tAAABAAE</td><td>1</td></tr>
+<tr><td>/?dns=6iMBAAABAAAAAAAAB2V4YW1wbGUDY29tAAABAAE</td><td>1</td></tr>
+</table></body></html>

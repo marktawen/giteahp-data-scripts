@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/><style>
+table {border: medium solid #6495ed;border-collapse: collapse;width: 100%;} th{font-family: monospace;border: thin solid #6495ed;padding: 5px;background-color: #D0E3FA;}th{text-align: left;}td{font-family: sans-serif;border: thin solid #6495ed;padding: 5px;text-align: center;}.odd{background:#e8edff;}img{padding:5px; border:solid; border-color: #dddddd #aaaaaa #aaaaaa #dddddd; border-width: 1px 2px 2px 1px; background-color:white;}</style>
+</head>
+<body>
+<table><tr><th colspan="2"><pre><code>SELECT hrm."Path" , COUNT(*) AS count<br>FROM http_requests_mitmproxy hrm  where hrm.Status = 404<br>GROUP BY hrm."Path"<br>ORDER BY count DESC</code></pre></th></tr><tr><th>Path</th><th>count</th></tr><tr class="odd"><td>/.env</td><td>8</td></tr>
+<tr><td>/goform/goform_set_cmd_process?isTest=false&amp;goformId=LOGIN&amp;username=Z3Vlc3Q%%3D&amp;password=MTIzNDU2</td><td>7</td></tr>
+<tr class="odd"><td>/.git/config</td><td>7</td></tr>
+<tr><td>/robots.txt</td><td>5</td></tr>
+<tr class="odd"><td>/dispatch.asp</td><td>5</td></tr>
+<tr><td>/remote/logincheck</td><td>4</td></tr>
+<tr class="odd"><td>/login?redir=/ng</td><td>4</td></tr>
+<tr><td>/api/v2/static/not.found</td><td>4</td></tr>
+<tr class="odd"><td>/api/.env</td><td>4</td></tr>
+<tr><td>/phpinfo.php</td><td>3</td></tr>
+<tr class="odd"><td>/migadmin/lang/legacy/legacy/filechecksum</td><td>3</td></tr>
+<tr><td>/fonts/ftnt-icons.woff</td><td>3</td></tr>
+<tr class="odd"><td>/config.json</td><td>3</td></tr>
+<tr><td>/_profiler/phpinfo</td><td>3</td></tr>
+<tr class="odd"><td>/.env.save</td><td>3</td></tr>
+<tr><td>/.env.prod</td><td>3</td></tr>
+<tr class="odd"><td>/static/lang/custom/sbin/init</td><td>2</td></tr>
+<tr><td>/security.txt</td><td>2</td></tr>
+<tr class="odd"><td>/resolve?name=example.com&amp;type=A</td><td>2</td></tr>
+<tr><td>/query?name=example.com&amp;type=A</td><td>2</td></tr>
+<tr class="odd"><td>/phpinfo</td><td>2</td></tr>
+<tr><td>/php_info.php</td><td>2</td></tr>
+<tr class="odd"><td>/owa/auth/logon.aspx</td><td>2</td></tr>
+<tr><td>/lang/legacy/filechecksum</td><td>2</td></tr>
+<tr class="odd"><td>/lang/custom/sbin/init</td><td>2</td></tr>
+<tr><td>/info</td><td>2</td></tr>
+<tr class="odd"><td>/geoserver/web/</td><td>2</td></tr>
+<tr><td>/dqgqoeCXckuwPtxov</td><td>2</td></tr>
+<tr class="odd"><td>/dns-query?name=example.com&amp;type=A</td><td>2</td></tr>
+<tr><td>/dev/.env</td><td>2</td></tr>
+<tr class="odd"><td>/backend/.env</td><td>2</td></tr>
+<tr><td>/application/.env</td><td>2</td></tr>
+<tr class="odd"><td>/admin/.env</td><td>2</td></tr>
+<tr><td>/actuator/gateway/routes</td><td>2</td></tr>
+<tr class="odd"><td>/.env.production</td><td>2</td></tr>
+<tr><td>/.env.example</td><td>2</td></tr>
+<tr class="odd"><td>/.aws/credentials</td><td>2</td></tr>
+<tr><td>/www/.git/config</td><td>1</td></tr>
+<tr class="odd"><td>/wp-config.php</td><td>1</td></tr>
+<tr><td>/wp-admin/setup-config.php</td><td>1</td></tr>
+<tr class="odd"><td>/web.config</td><td>1</td></tr>
+<tr><td>/version</td><td>1</td></tr>
+<tr class="odd"><td>/v1</td><td>1</td></tr>
+<tr><td>/user_secrets.yml</td><td>1</td></tr>
+<tr class="odd"><td>/status</td><td>1</td></tr>
+<tr><td>/static../.git/config</td><td>1</td></tr>
+<tr class="odd"><td>/src/.git/config</td><td>1</td></tr>
+<tr><td>/solr/admin/info/system</td><td>1</td></tr>
+<tr class="odd"><td>/solr/admin/cores?action=STATUS&amp;wt=json</td><td>1</td></tr>
+<tr><td>/settings/.env</td><td>1</td></tr>
+<tr class="odd"><td>/settings.py</td><td>1</td></tr>
+<tr><td>/server/.git/config</td><td>1</td></tr>
+<tr class="odd"><td>/server.key</td><td>1</td></tr>
+<tr><td>/server-status</td><td>1</td></tr>
+<tr class="odd"><td>/secrets.json</td><td>1</td></tr>
+<tr><td>/resolve?dns=TVYBAAABAAAAAAAAB2V4YW1wbGUDY29tAAABAAE</td><td>1</td></tr>
+<tr class="odd"><td>/resolve?dns=9ckBAAABAAAAAAAAB2V4YW1wbGUDY29tAAABAAE</td><td>1</td></tr>
+<tr><td>/query?q=SHOW+DIAGNOSTICS</td><td>1</td></tr>
+<tr class="odd"><td>/query?dns=UKoBAAABAAAAAAAAB2V4YW1wbGUDY29tAAABAAE</td><td>1</td></tr>
+<tr><td>/query?dns=7QkBAAABAAAAAAAAB2V4YW1wbGUDY29tAAABAAE</td><td>1</td></tr>
+<tr class="odd"><td>/public/.git/config</td><td>1</td></tr>
+<tr><td>/project/.git/config</td><td>1</td></tr>
+<tr class="odd"><td>/prod/.env</td><td>1</td></tr>
+<tr><td>/owa/auth/x.js</td><td>1</td></tr>
+<tr class="odd"><td>/odinhttpcall1755677723</td><td>1</td></tr>
+<tr><td>/nice%20ports%2C/Tri%6Eity.txt%2ebak</td><td>1</td></tr>
+<tr class="odd"><td>/media/.git/config</td><td>1</td></tr>
+<tr><td>/media../.git/config</td><td>1</td></tr>
+<tr class="odd"><td>/mPlayer</td><td>1</td></tr>
+<tr><td>/login</td><td>1</td></tr>
+<tr class="odd"><td>/files/.git/config</td><td>1</td></tr>
+<tr><td>/feed</td><td>1</td></tr>
+<tr class="odd"><td>/ews</td><td>1</td></tr>
+<tr><td>/evox/about</td><td>1</td></tr>
+<tr class="odd"><td>/etc/ssl/private/server.key</td><td>1</td></tr>
+<tr><td>/dump.sql</td><td>1</td></tr>
+<tr class="odd"><td>/download/file.ext</td><td>1</td></tr>
+<tr><td>/docker-compose.yml</td><td>1</td></tr>
+<tr class="odd"><td>/docker-compose.prod.yml</td><td>1</td></tr>
+<tr><td>/dns-query?dns=ZxsBAAABAAAAAAAAB2V4YW1wbGUDY29tAAABAAE</td><td>1</td></tr>
+<tr class="odd"><td>/dns-query?dns=0eoBAAABAAAAAAAAB2V4YW1wbGUDY29tAAABAAE</td><td>1</td></tr>
+<tr><td>/dev/.git/config</td><td>1</td></tr>
+<tr class="odd"><td>/db/schema.rb</td><td>1</td></tr>
+<tr><td>/database_backup.sql</td><td>1</td></tr>
+<tr class="odd"><td>/database.sql</td><td>1</td></tr>
+<tr><td>/data/.git/config</td><td>1</td></tr>
+<tr class="odd"><td>/core/.git/config</td><td>1</td></tr>
+<tr><td>/configuration/.env</td><td>1</td></tr>
+<tr class="odd"><td>/config/production.json</td><td>1</td></tr>
+<tr><td>/config/.git/config</td><td>1</td></tr>
+<tr class="odd"><td>/config/.env</td><td>1</td></tr>
+<tr><td>/config.yml</td><td>1</td></tr>
+<tr class="odd"><td>/config.yaml</td><td>1</td></tr>
+<tr><td>/config.xml</td><td>1</td></tr>
+<tr class="odd"><td>/config.php</td><td>1</td></tr>
+<tr><td>/cms/.git/config</td><td>1</td></tr>
+<tr class="odd"><td>/cloud-config.yml</td><td>1</td></tr>
+<tr><td>/cgi-bin/authLogin.cgi</td><td>1</td></tr>
+<tr class="odd"><td>/build/.env</td><td>1</td></tr>
+<tr><td>/backup/.git/config</td><td>1</td></tr>
+<tr class="odd"><td>/backup.zip</td><td>1</td></tr>
+<tr><td>/backup.tar.gz</td><td>1</td></tr>
+<tr class="odd"><td>/backup.sql</td><td>1</td></tr>
+<tr><td>/assets../.git/config</td><td>1</td></tr>
+<tr class="odd"><td>/app/.git/config</td><td>1</td></tr>
+<tr><td>/api/.git/config</td><td>1</td></tr>
+<tr class="odd"><td>/admin/.git/config</td><td>1</td></tr>
+<tr><td>/admin</td><td>1</td></tr>
+<tr class="odd"><td>/a</td><td>1</td></tr>
+<tr><td>/_vti_pvt/service.pwd</td><td>1</td></tr>
+<tr class="odd"><td>/WuEL</td><td>1</td></tr>
+<tr><td>/WebInterface/</td><td>1</td></tr>
+<tr class="odd"><td>/SiteLoader</td><td>1</td></tr>
+<tr><td>/ReportServer</td><td>1</td></tr>
+<tr class="odd"><td>/JfBj</td><td>1</td></tr>
+<tr><td>/HNAP1</td><td>1</td></tr>
+<tr class="odd"><td>/.vscode/sftp.json</td><td>1</td></tr>
+<tr><td>/.svn/wc.db</td><td>1</td></tr>
+<tr class="odd"><td>/.ssh/id_rsa</td><td>1</td></tr>
+<tr><td>/.ssh/id_ed25519</td><td>1</td></tr>
+<tr class="odd"><td>/.ssh/id_ecdsa</td><td>1</td></tr>
+<tr><td>/.git/index</td><td>1</td></tr>
+<tr class="odd"><td>/.git/HEAD</td><td>1</td></tr>
+<tr><td>/.envrc</td><td>1</td></tr>
+<tr class="odd"><td>/.env_sample</td><td>1</td></tr>
+<tr><td>/.env.uat</td><td>1</td></tr>
+<tr class="odd"><td>/.env.testing.local</td><td>1</td></tr>
+<tr><td>/.env.testing</td><td>1</td></tr>
+<tr class="odd"><td>/.env.test</td><td>1</td></tr>
+<tr><td>/.env.template</td><td>1</td></tr>
+<tr class="odd"><td>/.env.staging.local</td><td>1</td></tr>
+<tr><td>/.env.stage</td><td>1</td></tr>
+<tr class="odd"><td>/.env.secret</td><td>1</td></tr>
+<tr><td>/.env.sandbox</td><td>1</td></tr>
+<tr class="odd"><td>/.env.qa</td><td>1</td></tr>
+<tr><td>/.env.production.local</td><td>1</td></tr>
+<tr class="odd"><td>/.env.prod.local</td><td>1</td></tr>
+<tr><td>/.env.preprod</td><td>1</td></tr>
+<tr class="odd"><td>/.env.local</td><td>1</td></tr>
+<tr><td>/.env.live</td><td>1</td></tr>
+<tr class="odd"><td>/.env.dist</td><td>1</td></tr>
+<tr><td>/.env.development.local</td><td>1</td></tr>
+<tr class="odd"><td>/.env.dev.local</td><td>1</td></tr>
+<tr><td>/.env.dev</td><td>1</td></tr>
+<tr class="odd"><td>/.env.default</td><td>1</td></tr>
+<tr><td>/.env.config</td><td>1</td></tr>
+<tr class="odd"><td>/.env.ci</td><td>1</td></tr>
+<tr><td>/.env.bak</td><td>1</td></tr>
+<tr class="odd"><td>/.env.backup</td><td>1</td></tr>
+</table></body></html>

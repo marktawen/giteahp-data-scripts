@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/><style>
+table {border: medium solid #6495ed;border-collapse: collapse;width: 100%;} th{font-family: monospace;border: thin solid #6495ed;padding: 5px;background-color: #D0E3FA;}th{text-align: left;}td{font-family: sans-serif;border: thin solid #6495ed;padding: 5px;text-align: center;}.odd{background:#e8edff;}img{padding:5px; border:solid; border-color: #dddddd #aaaaaa #aaaaaa #dddddd; border-width: 1px 2px 2px 1px; background-color:white;}</style>
+</head>
+<body>
+<table><tr><th colspan="2"><pre><code>SELECT Country , COUNT(*) AS count<br>FROM (<br>SELECT stp.tcp_id , stp."Source" , asgi.Country <br>FROM ssh_tcp_pcap stp <br>LEFT JOIN all_sources_geo_info asgi ON stp."Source" = asgi.ip_address<br>)<br>GROUP BY Country<br>ORDER BY count DESC</code></pre></th></tr><tr><th>Country</th><th>count</th></tr><tr class="odd"><td>CN</td><td>820</td></tr>
+<tr><td>RO</td><td>402</td></tr>
+<tr class="odd"><td>NL</td><td>248</td></tr>
+<tr><td>SG</td><td>203</td></tr>
+<tr class="odd"><td>KR</td><td>191</td></tr>
+<tr><td>DE</td><td>156</td></tr>
+<tr class="odd"><td>MD</td><td>138</td></tr>
+<tr><td>RU</td><td>134</td></tr>
+<tr class="odd"><td>US</td><td>117</td></tr>
+<tr><td>VN</td><td>58</td></tr>
+<tr class="odd"><td>IR</td><td>53</td></tr>
+<tr><td>GB</td><td>32</td></tr>
+<tr class="odd"><td>LT</td><td>31</td></tr>
+<tr><td>HK</td><td>26</td></tr>
+<tr class="odd"><td>PL</td><td>16</td></tr>
+<tr><td>FR</td><td>16</td></tr>
+<tr class="odd"><td>FI</td><td>16</td></tr>
+<tr><td>BG</td><td>13</td></tr>
+<tr class="odd"><td>TW</td><td>10</td></tr>
+<tr><td>SE</td><td>9</td></tr>
+<tr class="odd"><td>ES</td><td>7</td></tr>
+<tr><td>BE</td><td>7</td></tr>
+<tr class="odd"><td>N/A</td><td>5</td></tr>
+<tr><td>IN</td><td>5</td></tr>
+<tr class="odd"><td>BR</td><td>5</td></tr>
+<tr><td>JP</td><td>3</td></tr>
+<tr class="odd"><td>YE</td><td>2</td></tr>
+<tr><td>UA</td><td>2</td></tr>
+<tr class="odd"><td>TR</td><td>2</td></tr>
+<tr><td>TH</td><td>2</td></tr>
+<tr class="odd"><td>NO</td><td>2</td></tr>
+<tr><td>LK</td><td>2</td></tr>
+<tr class="odd"><td>CH</td><td>2</td></tr>
+<tr><td>AU</td><td>2</td></tr>
+<tr class="odd"><td>ID</td><td>1</td></tr>
+</table></body></html>

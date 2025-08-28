@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/><style>
+table {border: medium solid #6495ed;border-collapse: collapse;width: 100%;} th{font-family: monospace;border: thin solid #6495ed;padding: 5px;background-color: #D0E3FA;}th{text-align: left;}td{font-family: sans-serif;border: thin solid #6495ed;padding: 5px;text-align: center;}.odd{background:#e8edff;}img{padding:5px; border:solid; border-color: #dddddd #aaaaaa #aaaaaa #dddddd; border-width: 1px 2px 2px 1px; background-color:white;}</style>
+</head>
+<body>
+<table><tr><th colspan="3"><pre><code>select Country, "Request Method","Path" <br>from (<br>SELECT hrm.Request , asgi.Country, hrm."Request Method", hrm."Path" <br>FROM http_requests_mitmproxy hrm <br>JOIN all_sources_geo_info asgi ON hrm."Source" = asgi.ip_address<br>)<br>where Country = 'NL'</code></pre></th></tr><tr><th>Country</th><th>Request Method</th><th>Path</th></tr><tr class="odd"><td>NL</td><td>GET</td><td>/</td></tr>
+<tr><td>NL</td><td>GET</td><td>/JfBj</td></tr>
+<tr class="odd"><td>NL</td><td>PROPFIND</td><td>/</td></tr>
+<tr><td>NL</td><td>PROPFIND</td><td>/</td></tr>
+<tr class="odd"><td>NL</td><td>PROPFIND</td><td>/</td></tr>
+<tr><td>NL</td><td>GET</td><td>/</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/SiteLoader</td></tr>
+<tr><td>NL</td><td>GET</td><td>/WuEL</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/a</td></tr>
+<tr><td>NL</td><td>GET</td><td>/download/file.ext</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/mPlayer</td></tr>
+<tr><td>NL</td><td>POST</td><td>/</td></tr>
+<tr class="odd"><td>NL</td><td>POST</td><td>/</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.env</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.env</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.env.example</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.env.example</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.env.prod</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.env.prod</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.env.save</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.env.save</td></tr>
+<tr><td>NL</td><td>GET</td><td>/_profiler/phpinfo</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/_profiler/phpinfo</td></tr>
+<tr><td>NL</td><td>GET</td><td>/admin/.env</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/admin/.env</td></tr>
+<tr><td>NL</td><td>GET</td><td>/api/.env</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/api/.env</td></tr>
+<tr><td>NL</td><td>GET</td><td>/application/.env</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/application/.env</td></tr>
+<tr><td>NL</td><td>GET</td><td>/backend/.env</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/backend/.env</td></tr>
+<tr><td>NL</td><td>GET</td><td>/dev/.env</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/dev/.env</td></tr>
+<tr><td>NL</td><td>GET</td><td>/info</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/info</td></tr>
+<tr><td>NL</td><td>GET</td><td>/php_info.php</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/php_info.php</td></tr>
+<tr><td>NL</td><td>GET</td><td>/phpinfo</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/phpinfo</td></tr>
+<tr><td>NL</td><td>GET</td><td>/phpinfo.php</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/phpinfo.php</td></tr>
+<tr><td>NL</td><td>POST</td><td>/</td></tr>
+<tr class="odd"><td>NL</td><td>POST</td><td>/</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.env</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.git/config</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.git/index</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/_profiler/phpinfo</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.env</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.env</td></tr>
+<tr><td>NL</td><td>GET</td><td>/goform/goform_set_cmd_process?isTest=false&amp;goformId=LOGIN&amp;username=Z3Vlc3Q%%3D&amp;password=MTIzNDU2</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/goform/goform_set_cmd_process?isTest=false&amp;goformId=LOGIN&amp;username=Z3Vlc3Q%%3D&amp;password=MTIzNDU2</td></tr>
+<tr><td>NL</td><td>GET</td><td>/goform/goform_set_cmd_process?isTest=false&amp;goformId=LOGIN&amp;username=Z3Vlc3Q%%3D&amp;password=MTIzNDU2</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/goform/goform_set_cmd_process?isTest=false&amp;goformId=LOGIN&amp;username=Z3Vlc3Q%%3D&amp;password=MTIzNDU2</td></tr>
+<tr><td>NL</td><td>GET</td><td>/goform/goform_set_cmd_process?isTest=false&amp;goformId=LOGIN&amp;username=Z3Vlc3Q%%3D&amp;password=MTIzNDU2</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/goform/goform_set_cmd_process?isTest=false&amp;goformId=LOGIN&amp;username=Z3Vlc3Q%%3D&amp;password=MTIzNDU2</td></tr>
+<tr><td>NL</td><td>GET</td><td>/goform/goform_set_cmd_process?isTest=false&amp;goformId=LOGIN&amp;username=Z3Vlc3Q%%3D&amp;password=MTIzNDU2</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.aws/credentials</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.env</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.env.production</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.git/HEAD</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.ssh/id_ecdsa</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.ssh/id_ed25519</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.ssh/id_rsa</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.svn/wc.db</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.vscode/sftp.json</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/_vti_pvt/service.pwd</td></tr>
+<tr><td>NL</td><td>GET</td><td>/api/.env</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/backup.sql</td></tr>
+<tr><td>NL</td><td>GET</td><td>/backup.tar.gz</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/backup.zip</td></tr>
+<tr><td>NL</td><td>GET</td><td>/cloud-config.yml</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/config.json</td></tr>
+<tr><td>NL</td><td>GET</td><td>/config.php</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/config.xml</td></tr>
+<tr><td>NL</td><td>GET</td><td>/config.yaml</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/config.yml</td></tr>
+<tr><td>NL</td><td>GET</td><td>/config/production.json</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/database.sql</td></tr>
+<tr><td>NL</td><td>GET</td><td>/database_backup.sql</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/db/schema.rb</td></tr>
+<tr><td>NL</td><td>GET</td><td>/docker-compose.yml</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/dump.sql</td></tr>
+<tr><td>NL</td><td>GET</td><td>/etc/ssl/private/server.key</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/feed</td></tr>
+<tr><td>NL</td><td>GET</td><td>/phpinfo.php</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/secrets.json</td></tr>
+<tr><td>NL</td><td>GET</td><td>/server-status</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/server.key</td></tr>
+<tr><td>NL</td><td>GET</td><td>/settings.py</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/user_secrets.yml</td></tr>
+<tr><td>NL</td><td>GET</td><td>/web.config</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/wp-admin/setup-config.php</td></tr>
+<tr><td>NL</td><td>GET</td><td>/wp-config.php</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/</td></tr>
+<tr><td>NL</td><td>GET</td><td>/</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/</td></tr>
+<tr><td>NL</td><td>GET</td><td>/</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.aws/credentials</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.env</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.env.backup</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.env.bak</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.env.ci</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.env.config</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.env.default</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.env.dev</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.env.dev.local</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.env.development.local</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.env.dist</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.env.live</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.env.local</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.env.preprod</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.env.prod</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.env.prod.local</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.env.production</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.env.production.local</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.env.qa</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.env.sandbox</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.env.save</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.env.secret</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.env.stage</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.env.staging.local</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.env.template</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.env.test</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.env.testing</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.env.testing.local</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.env.uat</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.env_sample</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.envrc</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.git/config</td></tr>
+<tr><td>NL</td><td>GET</td><td>/admin/.git/config</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/api/.env</td></tr>
+<tr><td>NL</td><td>GET</td><td>/api/.git/config</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/app/.git/config</td></tr>
+<tr><td>NL</td><td>GET</td><td>/assets../.git/config</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/backup/.git/config</td></tr>
+<tr><td>NL</td><td>GET</td><td>/build/.env</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/cms/.git/config</td></tr>
+<tr><td>NL</td><td>GET</td><td>/config.json</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/config/.env</td></tr>
+<tr><td>NL</td><td>GET</td><td>/config/.git/config</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/configuration/.env</td></tr>
+<tr><td>NL</td><td>GET</td><td>/core/.git/config</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/data/.git/config</td></tr>
+<tr><td>NL</td><td>GET</td><td>/dev/.git/config</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/docker-compose.prod.yml</td></tr>
+<tr><td>NL</td><td>GET</td><td>/files/.git/config</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/media../.git/config</td></tr>
+<tr><td>NL</td><td>GET</td><td>/media/.git/config</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/prod/.env</td></tr>
+<tr><td>NL</td><td>GET</td><td>/project/.git/config</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/public/.git/config</td></tr>
+<tr><td>NL</td><td>GET</td><td>/server/.git/config</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/settings/.env</td></tr>
+<tr><td>NL</td><td>GET</td><td>/src/.git/config</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/static../.git/config</td></tr>
+<tr><td>NL</td><td>GET</td><td>/www/.git/config</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.git/config</td></tr>
+<tr><td>NL</td><td>GET</td><td>/.git/config</td></tr>
+<tr class="odd"><td>NL</td><td>GET</td><td>/.git/config</td></tr>
+</table></body></html>
